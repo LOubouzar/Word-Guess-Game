@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  <title>Hanging out in Hyrule!</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div>
+        <div class="jumbotron">
+          <h1 class="display-5">Guess the Legend of Zelda Themed Word!</h1>
+          <p id="right"></p>
+          <p>
+            <span id="remain">10</span> Guesses Remain
+          </p>
+          <p id="wrong"></p>
+          <hr class="my-4">
+          <a class="btn btn-secondary btn-sm" href="index.html" role="button">Play again!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<script src="./assets/javascript/game.js"></script>
+
+</body>
+
+</html>
+
+<!-- Homework Retrospective: 
+  1. I wanted to source the script in the header but the javascript would load before the dom and wouldn't populate correctly. I attempted to fix this in the js file but I would just break it.
+  2. I wanted to insert icons (assests/images/triforce.png) instead of using underscore to track the letter count.
+  3. I also wanted to have an audio file continously play while the user played. But the play again button refreshed the page and therefore the audio file so I took it out.
+I read that you can accomplish this with ajax calls but I'll wait until later in the program to try it again. 
+  4. I wanted the background image to sync correctly with mobile and provided a mobile background to use however I couldn't get that to work. see the style.css
+-->

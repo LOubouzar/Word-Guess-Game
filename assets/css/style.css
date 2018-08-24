@@ -1,0 +1,41 @@
+
+/* Makes space between the _ _ _ */
+#right {
+  letter-spacing: 5px;
+}
+
+
+/* I cannot for the life of me to get the image to scale down using the min-width method */
+/* For width smaller than 400px: */
+body {
+  background-image: url('../images/LoZphone.jpg'); 
+
+}
+
+/* For width 400px and larger: */
+@media only screen and (min-width: 400px) {
+  body { 
+      background-image: url('../images/The-Legend-of-Zelda-Breath-of-the-Wild-4K-Main.jpg');
+      background-size: 100%;
+      background-position: fixed; 
+  }
+}
+
+
+.jumbotron {
+  margin-top: 20px;
+  opacity: 0.6
+}
+
+p {
+  font-size: 30px
+}
+
+@font-face {
+  font-family: Hylia;
+  src: url(HyliaSerifBeta-Regular.otf);
+}
+
+div {
+  font-family: Hylia;
+}
